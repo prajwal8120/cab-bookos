@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_cab_bookos_1684848612453-push-trigger-input-set
+  identifier: Build_cab_bookos_1684848612453pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: pocci
+  pipeline:
+    identifier: Build_cab_bookos_1684848612453
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
