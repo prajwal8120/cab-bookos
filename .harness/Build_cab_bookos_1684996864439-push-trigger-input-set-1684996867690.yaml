@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_cab_bookos_1684996864439-push-trigger-input-set
+  identifier: Build_cab_bookos_1684996864439pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Jenkinsharness
+  pipeline:
+    identifier: Build_cab_bookos_1684996864439
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
