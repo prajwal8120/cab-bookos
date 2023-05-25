@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_cab_bookos_1684996864439
+  name: Build cab-bookos
+  orgIdentifier: default
+  projectIdentifier: Jenkinsharness
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github
+        repoName: prajwal8120/cab-bookos
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
