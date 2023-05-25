@@ -49,5 +49,5 @@ pipeline:
                     jobParameter: []
                     unstableStatusAsSuccess: false
                     useConnectorUrlForJobExecution: false
-                  timeout: <+input>
+                  timeout: 5m
         tags: {}
