@@ -31,3 +31,23 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
+    - stage:
+        name: Jenkins
+        identifier: Jenkins
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: JenkinsBuild
+                  name: JenkinsBuild_1
+                  identifier: JenkinsBuild_1
+                  spec:
+                    connectorRef: Jenkinsconnector
+                    jobName: "4545"
+                    jobParameter: []
+                    unstableStatusAsSuccess: false
+                    useConnectorUrlForJobExecution: false
+                  timeout: <+input>
+        tags: {}
