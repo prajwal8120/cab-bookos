@@ -45,7 +45,7 @@ pipeline:
                   identifier: JenkinsBuild_1
                   spec:
                     connectorRef: Jenkinsconnector
-                    jobName: "4545"
+                    jobName: bookos
                     jobParameter: []
                     unstableStatusAsSuccess: false
                     useConnectorUrlForJobExecution: false
