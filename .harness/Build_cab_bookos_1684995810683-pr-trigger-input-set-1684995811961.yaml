@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_cab_bookos_1684995810683-pr-trigger-input-set
+  identifier: Build_cab_bookos_1684995810683prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Jenkinsharness
+  pipeline:
+    identifier: Build_cab_bookos_1684995810683
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
