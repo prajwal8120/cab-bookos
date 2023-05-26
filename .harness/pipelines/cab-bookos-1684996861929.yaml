@@ -50,9 +50,12 @@ pipeline:
                     connectorRef: Jenkinsconnector
                     jobName: bookos
                     jobParameter: []
+                    delegateSelectors:
+                      - helm-delegate
                     unstableStatusAsSuccess: false
-                    useConnectorUrlForJobExecution: false
+                    useConnectorUrlForJobExecution: true
                   timeout: 10m
+                  failureStrategies: []
         tags: {}
         delegateSelectors:
           - helm-delegate
