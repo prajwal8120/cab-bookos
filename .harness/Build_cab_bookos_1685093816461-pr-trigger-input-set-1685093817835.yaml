@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_cab_bookos_1685093816461-pr-trigger-input-set
+  identifier: Build_cab_bookos_1685093816461prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Jenkinsdeploy
+  pipeline:
+    identifier: Build_cab_bookos_1685093816461
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
