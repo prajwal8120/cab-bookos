@@ -25,12 +25,15 @@ pipeline:
                   timeout: ""
                   type: Run
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
+        variables: []
+        when:
+          pipelineStatus: Success
     - stage:
         name: Jenkins
         identifier: Jenkins
@@ -53,3 +56,7 @@ pipeline:
         tags: {}
         delegateSelectors:
           - helm-delegate
+  timeout: 10m
+  allowStageExecutions: true
+  delegateSelectors:
+    - helm-delegate
