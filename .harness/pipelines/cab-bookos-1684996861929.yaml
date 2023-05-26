@@ -58,5 +58,3 @@ pipeline:
           - helm-delegate
   timeout: 10m
   allowStageExecutions: true
-  delegateSelectors:
-    - helm-delegate
