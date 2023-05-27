@@ -21,6 +21,8 @@ pipeline:
                     connectorRef: jenkins
                     jobName: cab
                     jobParameter: []
+                    delegateSelectors:
+                      - helm-delegate
                     unstableStatusAsSuccess: false
                     useConnectorUrlForJobExecution: true
                   timeout: 10m
