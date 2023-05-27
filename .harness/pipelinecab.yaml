@@ -19,7 +19,7 @@ pipeline:
                   identifier: Build_push
                   spec:
                     connectorRef: jenkins
-                    jobName: cab
+                    jobName: booking-app
                     jobParameter: []
                     delegateSelectors:
                       - helm-delegate
