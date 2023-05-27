@@ -1,0 +1,28 @@
+pipeline:
+  name: pipeline-cab
+  identifier: pipelinecab
+  projectIdentifier: deployment
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Jenkins_build
+        identifier: Jenkins_build
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: JenkinsBuild
+                  name: Build_push
+                  identifier: Build_push
+                  spec:
+                    connectorRef: jenkins
+                    jobName: cab
+                    jobParameter: []
+                    unstableStatusAsSuccess: false
+                    useConnectorUrlForJobExecution: true
+                  timeout: 10m
+                  failureStrategies: []
+        tags: {}
